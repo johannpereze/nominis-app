@@ -1,3 +1,20 @@
-.life-points{
-    
+.life-points {
+  display: flex;
+}
+
+.pointHeart {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  margin-right: 5px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.pointTrue{
+    background-image: url(../../assets/Icono\ 2.png);
+}
+
+.pointFalse{
+    background-image: url(../../assets/Icono\ 1.png);
 }

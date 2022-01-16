@@ -1,0 +1,16 @@
+.exercise__statement{
+  width: 50%
+}
+
+.exercise__statement h2 {
+  font-size: 60px;
+  font-weight: 500;
+  color: var(--text-dark);
+    margin-top: 100px;
+}
+
+.exercise__statement p {
+  font-size: 50px;
+  margin-right: 100px;
+  color: var(--text-medium);
+}
