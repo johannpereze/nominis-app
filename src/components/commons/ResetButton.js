@@ -1,5 +1,7 @@
+import './ResetButton.css'
+
 export const ResetButton = () => {
     return (
-        <div className="exercise__options--reset-control"><p>reset</p></div>
+        <div className="reset-control"><stan className="reset-button__icon"></stan></div>
     )
 }

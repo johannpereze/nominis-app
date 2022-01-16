@@ -1,0 +1,11 @@
+.reset-button__icon {
+  background-image: url(../../assets/Icono\ 3.png);
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  margin-right: 5px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  filter: var(--filter-shadow);
+}

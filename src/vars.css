@@ -2,4 +2,5 @@
   --color-red: #cc0000;
   --text-dark: #363b3b;
   --text-medium: #4f5d5b;
+  --filter-shadow: drop-shadow(3px -2px 3px rgba(0, 0, 0, 0.25));
 }

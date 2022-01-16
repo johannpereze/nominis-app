@@ -1,0 +1,22 @@
+.sound-control {
+  display: flex;
+}
+
+.sound-control__icon {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  margin-right: 5px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  filter: var(--filter-shadow);
+}
+
+.sound-control__icon--true {
+  background-image: url(../../assets/Icono\ 4.png);
+}
+
+.sound-control__icon--false {
+  background-image: url(../../assets/Icono\ 5.png);
+}
