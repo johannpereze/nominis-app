@@ -12,7 +12,7 @@ export const LifePoints = ({ userLifePoints }) => {
     }
 
     return (
-        <div>
+        <div className='life-points'>
             {lifePoints.map((lifepoint, i) => lifepoint ? <span key={i} className="pointHeart pointTrue"></span> : <span key={i} className="pointHeart pointFalse"></span>)}
         </div>
     )

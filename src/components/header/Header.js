@@ -10,10 +10,14 @@ export const Header = ({ nominisLogo, storyTitle, storySubtitle, userLifePoints,
     return (
         <header className="header">
             <div className='header__left'>
-                <LogoNominis nominisLogo={nominisLogo} />
-                <StoryInfo storyTitle={storyTitle} storySubtitle={storySubtitle} />
-                <LifePoints userLifePoints={userLifePoints} />
-                <UserAvatar userAvatarUrl={userAvatarUrl} />
+                <div className="header__left--left">
+                    <LogoNominis nominisLogo={nominisLogo} />
+                    <StoryInfo storyTitle={storyTitle} storySubtitle={storySubtitle} />
+                </div>
+                <div className="header__left--right">
+                    <LifePoints userLifePoints={userLifePoints} />
+                    <UserAvatar userAvatarUrl={userAvatarUrl} />
+                </div>
             </div>
             <div className='header__right'>
                 <SoundControl soundControl={soundControl} />

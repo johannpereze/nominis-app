@@ -1,4 +1,4 @@
-import './ExerciseInput.css'
+import './Exercise.css'
 
 export const ExerciseInput = () => {
     return (

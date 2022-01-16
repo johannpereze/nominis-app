@@ -1,4 +1,4 @@
-import './ExerciseAnswerOptions.css'
+import './Exercise.css'
 
 export const ExerciseAnswerOptions = ({ sentence }) => {
     

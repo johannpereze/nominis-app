@@ -2,7 +2,7 @@ import { ResetButton } from "../commons/ResetButton"
 import { ExerciseAnswerOptions } from "./ExerciseAnswerOptions"
 import { ExerciseInput } from "./ExerciseInput"
 
-import './ExerciseAnswers.css'
+import './Exercise.css'
 
 export const ExerciseAnswers = ({sentence}) => {
     return (

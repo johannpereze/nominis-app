@@ -1,5 +1,5 @@
 .life-points {
-  display: flex;
+  margin-right: 35px;
 }
 
 .pointHeart {
@@ -11,10 +11,26 @@
   background-repeat: no-repeat;
 }
 
-.pointTrue{
-    background-image: url(../../assets/Icono\ 2.png);
+.pointTrue {
+  background-image: url(../../assets/Icono\ 2.png);
 }
 
-.pointFalse{
-    background-image: url(../../assets/Icono\ 1.png);
+.pointFalse {
+  background-image: url(../../assets/Icono\ 1.png);
+}
+
+@media (max-width: 768px) {
+  .life-points {
+    margin-right: 15px;
+  }
+  .pointHeart {
+    width: 25px;
+    height: 25px;
+  }
+}
+@media (max-width: 576px) {
+  .pointHeart {
+    width: 20px;
+    height: 20px;
+  }
 }

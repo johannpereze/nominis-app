@@ -1,4 +1,4 @@
-import './ExerciseStatement.css'
+import './Exercise.css'
 
 export const ExerciseStatement = ({ instructionsTitle, instructionsBody }) => {
     return (

@@ -20,3 +20,10 @@
 .sound-control__icon--false {
   background-image: url(../../assets/Icono\ 5.png);
 }
+
+@media (max-width: 768px) {
+  .sound-control__icon {
+    width: 25px;
+    height: 25px;
+  }
+}

@@ -1,7 +1,21 @@
+@import '../../vars.css';
+
 .logo {
   display: none;
 }
 
 .logo img {
-  width: 150px;
+  width: 200px;
+}
+
+@media (max-width: 1200px) {
+  .logo {
+    display: block;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo img {
+    width: 130px;
+  }
 }

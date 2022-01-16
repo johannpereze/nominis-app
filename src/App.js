@@ -3,7 +3,6 @@ import { Header } from './components/header/Header';
 import { Exercise } from './components/exercise/Exercise';
 
 import avatar from './assets/avatar.jpg'
-import backgroundDesktop from './assets/desktop-background.png'
 
 import './App.css';
 
@@ -23,7 +22,7 @@ export const App = () => {
   const [state] = useState(initialState)
 
   return (
-    <div className='app-body' style={{ backgroundImage: `url(${backgroundDesktop})` }}>
+    <div className='app-body'>
       <Header {...state} />
       <Exercise {...state} />
     </div>

@@ -1,5 +1,20 @@
 .app-body {
+  background-image: url(./assets/desktop-background.png);
   background-size: cover;
   padding: 45px 65px;
-  height: calc(100vh - 90px);
+  background-position: 50%;
+  min-height: calc(100vh - 90px);
+}
+
+@media (max-width: 1200px) {
+  .app-body {
+    background-image: url(./assets/mobile-background.png);
+  }
+}
+
+@media (max-width: 576px) {
+  .app-body {
+    padding: 30px 20px;
+    min-height: calc(100vh - 40px);
+  }
 }

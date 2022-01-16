@@ -1,17 +1,43 @@
 .header {
   display: flex;
-  justify-content: space-between;
 }
 
 .header__left {
   display: flex;
   justify-content: space-between;
-  width: 50%;
+  width: 55%;
+  align-items: center;
+}
+
+.header__left--left {
+  display: flex;
+}
+
+.header__left--right {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
 .header__right {
   display: flex;
   justify-content: flex-end;
-  width: 50%;
+  width: 45%;
+}
+
+@media (max-width: 1200px) {
+  .header__left{
+    width: 75%;
+  }
+  .header__right{
+    width: 25%;
+  }
+}
+@media (max-width: 768px) {
+  .header__left{
+    width: 92%;
+  }
+  .header__right{
+    width: 8%;
+  }
 }
