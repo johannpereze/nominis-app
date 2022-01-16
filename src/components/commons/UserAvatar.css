@@ -1,5 +1,5 @@
 .user-avatar img {
   width: 100px;
   border-radius: 10px;
-  box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
+  box-shadow: var(--box-shadow);
 }

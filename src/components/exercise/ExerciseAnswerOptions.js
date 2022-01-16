@@ -1,7 +1,12 @@
-export const ExerciseAnswerOptions = () => {
+import './ExerciseAnswerOptions.css'
+
+export const ExerciseAnswerOptions = ({ sentence }) => {
+    
+    const words = sentence.split(' ')
+
     return (
-        <div className="exercise__options--answers">
-            <button>answer</button>
-          </div>
+        <div className="exercise__options">
+            {words.map((word) => <button>{word}</button>)}
+        </div>
     )
 }

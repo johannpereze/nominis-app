@@ -1,7 +1,9 @@
+import './ExerciseInput.css'
+
 export const ExerciseInput = () => {
     return (
-        <div className="exercise__options--input">
-            <input type="text" name="" id="" />
+        <div className="exercise-input">
+            <input disabled type="text" name="" id="" />
           </div>
     )
 }

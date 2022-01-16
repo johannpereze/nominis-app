@@ -1,8 +1,13 @@
+.reset-control{
+  align-self: flex-end;
+}
+
 .reset-button__icon {
   background-image: url(../../assets/Icono\ 3.png);
   display: inline-block;
   width: 35px;
   height: 35px;
+  margin-bottom: 10px;
   margin-right: 5px;
   background-size: cover;
   background-repeat: no-repeat;

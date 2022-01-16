@@ -1,0 +1,15 @@
+.exercise-input input{
+    background-color: var(--color-light);
+    width: calc(100% - 60px);
+    height: 80px;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 30px;
+    margin-bottom: 10px;
+    font-size: 45px;
+    color: var(--text-medium);
+    box-shadow: var(--box-shadow);
+}
+.exercise-input input:focus-visible{
+    outline: none;
+}

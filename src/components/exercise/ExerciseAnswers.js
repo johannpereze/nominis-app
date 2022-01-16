@@ -2,12 +2,14 @@ import { ResetButton } from "../commons/ResetButton"
 import { ExerciseAnswerOptions } from "./ExerciseAnswerOptions"
 import { ExerciseInput } from "./ExerciseInput"
 
-export const ExerciseAnswers = () => {
+import './ExerciseAnswers.css'
+
+export const ExerciseAnswers = ({sentence}) => {
     return (
-        <div className="exercise__options--container">
+        <div className="exercise__answers">
             <ResetButton />
             <ExerciseInput />
-            <ExerciseAnswerOptions />
+            <ExerciseAnswerOptions sentence={sentence} />
         </div>
     )
 }

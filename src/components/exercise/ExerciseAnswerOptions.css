@@ -1,0 +1,25 @@
+.exercise__options {
+  display: flex;
+}
+.exercise__options button {
+  background-color: var(--color-light);
+  height: 60px;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 30px;
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 45px;
+  color: var(--text-medium);
+  box-shadow: var(--box-shadow);
+}
+
+.exercise__options button:hover {
+  transform: scale(1.1);
+}
+
+.exercise__options button:active{
+    transform: scale(0.9);
+  }
+

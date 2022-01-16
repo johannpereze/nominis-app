@@ -17,6 +17,7 @@ export const App = () => {
     soundControl: true,
     instructionsTitle: "Let's practice",
     instructionsBody: "Put the words in order to make a correct sentence.",
+    sentence: "I brush my teeth"
   }
 
   const [state] = useState(initialState)
