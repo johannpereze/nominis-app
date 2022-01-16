@@ -1,17 +1,67 @@
-
-
-app-body {
+.app-body {
   background-size: cover;
-  background-repeat: no-repeat;
+  padding: 35px;
+  /* background-repeat: no-repeat;
   background-position: 50%;
   min-height: 100%;
-  background-attachment: fixed !important;
+  background-attachment: fixed !important;  */
 }
 
-.header__user-avatar img {
-  width: 50px;
+
+/*
+.header{
+  display: flex;
+  justify-content: space-between;
+}
+.header__left{
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+.header__right{
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
 }
 
 .header__logo img {
   width: 150px;
 }
+
+.story-info{
+  display: flex;
+  flex-direction: column;
+}
+
+.story-info__title h5{
+
+}
+.story-info__subtitle h6{
+
+}
+.header__life-points{
+
+}
+.header__user-avatar img {
+  width: 50px;
+}
+.header__sound-control{
+
+}
+.exercise__instructions--container{
+
+}
+.exercise__options--container{
+
+}
+.exercise__options--reset-control{
+
+}
+.exercise__options--input{
+
+}
+.exercise__options--answers{
+
+}
+
+*/

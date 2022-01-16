@@ -1,0 +1,10 @@
+.story-info {
+  display: flex;
+  flex-direction: column;
+}
+.story-info__title h5{
+    margin: 0;
+}
+.story-info__subtitle h6{
+    margin: 0;
+}

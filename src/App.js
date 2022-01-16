@@ -1,8 +1,10 @@
 import { useState } from 'react';
+import { Header } from './components/header/Header';
+import { Exercise } from './components/exercise/Exercise';
 
 import avatar from './assets/avatar.jpg'
-import nominisLogo from './assets/Nominis-Logo.png'
 import backgroundDesktop from './assets/desktop-background.png'
+
 import './App.css';
 
 export const App = () => {
@@ -19,39 +21,10 @@ export const App = () => {
 
   const [state] = useState(initialState)
 
-  const { storyTitle,
-    storySubtitle,
-    userLifePoints,
-    userAvatarUrl,
-    soundControl,
-    instructionsTitle,
-    instructionsBody } = state
-
   return (
     <div className='app-body' style={{ backgroundImage: `url(${backgroundDesktop})` }}>
-      <header className="header">
-        <div className="header__logo"><img src={nominisLogo} alt="Nominis Logo" /></div>
-        <div className="header__story-title">{storyTitle}</div>
-        <div className="header__story-subtitle">{storySubtitle}</div>
-        <div className="header__life-points">{userLifePoints}</div>
-        <div className="header__user-avatar"><img src={userAvatarUrl} alt="user" /></div>
-        <div className="header__sound-control">{JSON.stringify(soundControl)}</div>
-      </header>
-      <main className="exercise">
-        <div className="exercise__instructions--container">
-          <h2>{instructionsTitle}</h2>
-          <p>{instructionsBody}</p>
-        </div>
-        <div className="exercise__options--container">
-          <div className="exercise__options--reset-control"><p>reset</p></div>
-          <div className="exercise__options--input">
-            <input type="text" name="" id="" />
-          </div>
-          <div className="exercise__options--answers">
-            <button>answer</button>
-          </div>
-        </div>
-      </main>
+      <Header {...state} />
+      <Exercise {...state} />
     </div>
   )
 }
