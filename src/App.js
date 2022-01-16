@@ -1,6 +1,8 @@
 import { useState } from 'react';
 
 import avatar from './assets/avatar.jpg'
+import nominisLogo from './assets/Nominis-Logo.png'
+import backgroundDesktop from './assets/desktop-background.png'
 import './App.css';
 
 export const App = () => {
@@ -26,9 +28,9 @@ export const App = () => {
     instructionsBody } = state
 
   return (
-    <>
+    <div className='app-body' style={{ backgroundImage: `url(${backgroundDesktop})` }}>
       <header className="header">
-        <div className="header__logo">{"logo"}</div>
+        <div className="header__logo"><img src={nominisLogo} alt="Nominis Logo" /></div>
         <div className="header__story-title">{storyTitle}</div>
         <div className="header__story-subtitle">{storySubtitle}</div>
         <div className="header__life-points">{userLifePoints}</div>
@@ -50,7 +52,7 @@ export const App = () => {
           </div>
         </div>
       </main>
-    </>
+    </div>
   )
 }
 

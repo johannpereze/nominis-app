@@ -1,3 +1,17 @@
-.header__user-avatar img{
+
+
+app-body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  min-height: 100%;
+  background-attachment: fixed !important;
+}
+
+.header__user-avatar img {
   width: 50px;
+}
+
+.header__logo img {
+  width: 150px;
 }

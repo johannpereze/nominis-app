@@ -4,16 +4,9 @@ import './index.css';
 import { App } from './App';
 import reportWebVitals from './reportWebVitals';
 
-import { ThemeProvider } from '@mui/material/styles';
-import theme from './theme';
-import { GlobalStyles } from '@mui/material';
-
 ReactDOM.render(
   <React.StrictMode>
-    <ThemeProvider theme={theme}>
-      <GlobalStyles styles={{ body: { backgroundColor: '#f5f5f5' } }} />
-      <App />
-    </ThemeProvider>
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
