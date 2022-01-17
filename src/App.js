@@ -5,6 +5,7 @@ import { Exercise } from './components/exercise/Exercise';
 import avatar from './assets/avatar.jpg'
 
 import './App.css';
+import { GameContext } from './GameContext';
 
 export const App = () => {
 
@@ -16,15 +17,20 @@ export const App = () => {
     soundControl: true,
     instructionsTitle: "Let's practice",
     instructionsBody: "Put the words in order to make a correct sentence.",
-    sentence: "I brush my teeth"
+    sentence: "I brush my teeth",
+    inputValue: [],
+    buttonDisabled: false
   }
 
-  const [state] = useState(initialState)
+  const [gameState, setGameState] = useState(initialState)
+
 
   return (
     <div className='app-body'>
-      <Header {...state} />
-      <Exercise {...state} />
+      <GameContext.Provider value={{ gameState, setGameState }}>
+        <Header />
+        <Exercise />
+      </GameContext.Provider>
     </div>
   )
 }

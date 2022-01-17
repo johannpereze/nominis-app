@@ -26,6 +26,10 @@
 .exercise__options button:active {
   transform: scale(0.9);
 }
+.exercise__options button:disabled {
+  transform: none;
+  color: var(--text-light);
+}
 
 .exercise__answers {
   display: flex;
@@ -96,4 +100,3 @@
     height: 60px;
   }
 }
-

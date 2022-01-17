@@ -5,13 +5,19 @@ import { UserAvatar } from "../commons/UserAvatar"
 import { StoryInfo } from "../commons/StoryInfo"
 
 import './Header.css'
+import { useContext } from "react"
+import { GameContext } from "../../GameContext"
 
-export const Header = ({ nominisLogo, storyTitle, storySubtitle, userLifePoints, userAvatarUrl, soundControl }) => {
+export const Header = () => {
+
+    const { gameState } = useContext(GameContext)
+    const { storyTitle, storySubtitle, userLifePoints, userAvatarUrl, soundControl } = gameState
+
     return (
         <header className="header">
             <div className='header__left'>
                 <div className="header__left--left">
-                    <LogoNominis nominisLogo={nominisLogo} />
+                    <LogoNominis />
                     <StoryInfo storyTitle={storyTitle} storySubtitle={storySubtitle} />
                 </div>
                 <div className="header__left--right">

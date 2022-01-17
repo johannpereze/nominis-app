@@ -4,12 +4,13 @@ import { ExerciseInput } from "./ExerciseInput"
 
 import './Exercise.css'
 
-export const ExerciseAnswers = ({sentence}) => {
+export const ExerciseAnswers = () => {
+
     return (
         <div className="exercise__answers">
             <ResetButton />
             <ExerciseInput />
-            <ExerciseAnswerOptions sentence={sentence} />
+            <ExerciseAnswerOptions />
         </div>
     )
 }
