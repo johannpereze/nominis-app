@@ -1,4 +1,26 @@
-# Getting Started with Create React App
+# Nominis Assessment
+
+# Live Version
+
+To go to the live version [click here](https://nominis-assessment.netlify.app/)
+
+## Assumptions:
+
+- The sentences are stored in the front-end
+- The company uses plain CSS
+- useContext is enough instead of redux or other state managers
+- There is no design system to take the components from it
+- The company uses jest and react testing library for unitary testing
+- The app is developed in react with hooks and only functional components
+- I don't have to set up webpack myself and I can use create react app
+
+## MockUp to develop:
+
+![image](https://user-images.githubusercontent.com/84161317/149859470-17cf46c1-e8a1-46b5-806a-d0a6717c988d.png)
+![image](https://user-images.githubusercontent.com/84161317/149859515-7e65121b-31c7-4fee-88ee-93b0aad06831.png)
+
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
