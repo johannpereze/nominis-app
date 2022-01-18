@@ -28,7 +28,7 @@ export const ExerciseAnswerOptions = () => {
                 userLifePoints: userLifePoints + 1,
                 inputValue: []
             })
-            userLifePoints <= 4 ? alert("You Earn a HEART <3") : alert("YOU WON THE GAME! - Refresh the browser to play agaain")
+            userLifePoints <= 4 ? alert("You Earned a HEART <3") : alert("YOU WON THE GAME! - Refresh the browser to play again")
             const buttons = document.querySelectorAll("button")
             buttons.forEach((button) => button.disabled = false)
             console.log("Ganaste!");
